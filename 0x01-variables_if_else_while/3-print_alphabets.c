@@ -11,8 +11,8 @@ int main(void)
 	int ch;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
-		putcher(ch);
+		putchar(ch);
 	for (ch = 'A'; ch <= 'Z'; ch++)
-		puthchar(ch);
+		putchar(ch);
 	return (0);
 }
