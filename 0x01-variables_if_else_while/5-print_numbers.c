@@ -12,7 +12,8 @@ int main(void)
 
 	for (set = 0; set <= 9; set++)
 	{
-		printf("%d\n", set);
+		printf("%d", set);
+		printf("\n")
 	}
 	return (0);
 }
