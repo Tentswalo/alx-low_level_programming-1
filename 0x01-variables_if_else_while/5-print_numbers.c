@@ -10,7 +10,7 @@ int main(void)
 {
 	int set;
 
-	for (set = '0'; set <= '9'; set++)
+	for (set = 0; set <= 9; set++)
 	{
 		printf("%d", set);
 	}
