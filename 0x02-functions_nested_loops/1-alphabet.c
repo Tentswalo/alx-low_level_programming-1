@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *void print_alphabet(void) - Prints alphabet in lower case
- *Decription: Prints alphabet using _putchar function
- *Return: Always 0 for success
+ * print_alphabet - A function that prints the alphabet ten times
+ * Decription - Prints alphabet using _putchar function
+ * Return: Always 0 for success
  */
 
 void print_alphabet(void)
