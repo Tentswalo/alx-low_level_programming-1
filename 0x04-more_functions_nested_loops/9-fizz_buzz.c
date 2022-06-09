@@ -17,21 +17,24 @@ int main(void)
 	{
 		if ((i % 5 == 0) && (i % 3 == 0))
 		{
+			printf(" ");
 			printf("FizzBuzz");
 		}
 		else if (i % 5 == 0)
 		{
+			printf(" ");
 			printf("Buzz");
 		}
 		else if (i % 3 == 0)
 		{
+			printf(" ");
 			printf("Fizz");
 		}
 		else
 		{
+			printf(" ");
 			printf("%d", i);
 		}
-		printf(" ");
 	}
 	putchar('\n');
 
