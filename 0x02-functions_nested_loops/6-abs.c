@@ -2,14 +2,13 @@
 
 /**
  * _abs - computes absolute valuse of an integer
- * @c: The character to compute
+ * @x: The character to compute
  *
  * Return: Nothing
  */
 
-int _abs(int)
+int _abs(int x)
 {
-	int x;
 	int c = -1;
 	int i = x * c;
 
