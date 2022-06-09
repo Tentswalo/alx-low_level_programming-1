@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_most_numbers - Prints 0-9, excet 2 and 4, c to stdout
+ * print_most_numbers - Prints 0-9, except 2 and 4, c to stdout
  *
  * Return: void
  */
@@ -17,4 +17,5 @@ void print_most_numbers(void)
 			_putchar(c);
 		}
 	}
+	_putchar('\n');
 }
