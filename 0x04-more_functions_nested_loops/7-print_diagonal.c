@@ -10,13 +10,10 @@ void print_diagonal(int n)
 {
 	int i;
 	int j;
-	int k;
-
-	k = n - 1;
 
 	if (n > 0)
 	{
-		for (i = 1; i <= k; i++)
+		for (i = 1; i <= n; i++)
 		{
 			for (j = 1; j <= i; j++)
 			{
