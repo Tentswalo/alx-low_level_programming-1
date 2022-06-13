@@ -6,7 +6,7 @@
  * main - Entry point
  *
  * @length: of password produced
- * Return: Always void
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -22,4 +22,5 @@ int main(void)
 	{
 	printf("%c", characts[rand() % (sizeof(characts) - 1)]);
 	}
+	return (0);
 }
