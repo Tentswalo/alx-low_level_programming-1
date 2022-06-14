@@ -14,9 +14,8 @@ int _strlen(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		length = length + 1;
+		_putchar(i);	
 	}
-	_putchar(length);
 	_putchar('\n');
 
 	return (0);
