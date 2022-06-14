@@ -1,15 +1,26 @@
 #include "main.h"
 
 /**
- * print_last_digit - print last digit
- * @c: variable to analyse
+ * print_last_digit - Prints last digit of a number
+ * @i: Number whose last digit to print
  *
- * Return: Last digit of c
+ * Return: value of last digit (success)
  */
 
-int print_last_digit(int c)
+int print_last_digit(int i)
 {
-	_putchar(c % 10);
+	int last_d;
 
-return (c % 10);
+	if (i >= 0)
+	{
+		last_d = i % 10;
+	}
+	else if (i < 0)
+	{
+		i *= (-1);
+		last_d = i % 10;
+	}
+	_putchar(last_d + '0');
+
+	return (last_d);
 }
