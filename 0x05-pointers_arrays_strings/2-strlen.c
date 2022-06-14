@@ -4,18 +4,18 @@
  * _strlen - Determines the length of a given character string
  * @s: pointer variable to first character os the string
  *
- * Return: Always 0 (Success)
+ * Return: string length (Success)
  */
 
 int _strlen(char *s)
 {
-	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	int length = 0;
+
+	while (*(s + length) != '\0')
 	{
-		_putchar(i);
+		length++;
 	}
-	_putchar('\n');
 
-	return (0);
+	return (length);
 }
