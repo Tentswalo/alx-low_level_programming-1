@@ -54,7 +54,7 @@ char *_strdup(char *str)
 				nu_str[i] = str[i];
 			}
 			nu_str[i] = '\0';
-			
+
 			return (nu_str);
 
 		}
