@@ -39,12 +39,12 @@ int _putchar(char c)
  *
  * Return: the number of characters printed (excluding the null byte
  * used to end output to strings) on success 1.
- * 
+ *
  */
 
 int _printf(const char *format, ...)
 {
-	int i, j, c; 
+	int i, j, c;
 	char *s;
 	va_list args;
 
@@ -52,19 +52,14 @@ int _printf(const char *format, ...)
 
 	for (i = 0; format[i] != '\0'; i++)
 	{
-		
-		/*What happens if encountering just charcters other than %*/
+
 		while (format[i] != '%')
-		{
-			_putchar(format[i]);
+		{	_putchar(format[i]);
 			i++;
 		}
-
 		format++;
-
 		if (format[i] == 'c')
-		{
-			c = va_arg (args, int);
+		{	c = va_arg(args, int);
 			_putchar(c + 0);
 		}
 		else if (format[i] == 's')
@@ -86,9 +81,7 @@ int _printf(const char *format, ...)
 		{
 			_putchar('%');
 		}
-		 
 	}
-
 	va_end(args);
-	return(0);
+	return (0);
 }
