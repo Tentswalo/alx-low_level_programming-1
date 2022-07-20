@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <sdtio.h>
+#include <stdio.h>
 
 /**
  * listint_len - returns the number of nodes in a linked list
@@ -10,14 +10,15 @@
 
 size_t listint_len(const listint_t *h)
 {
-	const listint_t *temp;	
+	const listint_t *temp;
 	int i = 0;
 
 	temp = h;
-	
+
 	while (temp != NULL)
 	{
 		i++;
+		temp = temp->next;
 	}
 
 	return (i);
